@@ -72,7 +72,7 @@ async function fetchPhotos() {
     });
 }
 
-// Render>-----------------------
+
 
 function render({ totalHits, hits }) {
   const template = hits.map(cardTemplate).join('');
@@ -84,7 +84,7 @@ function render({ totalHits, hits }) {
   refs.gallery.insertAdjacentHTML('beforeend', template);
 }
 
-// LoadMore Button>-----------------------
+
 
 async function onLoadMoreClick() {
   if (!api) return;
